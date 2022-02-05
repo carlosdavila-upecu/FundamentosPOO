@@ -2,7 +2,7 @@
 {
     public class Rectangulo
     {
-        private double alto;
+        public double alto { get; set; }
         private double ancho;
 
         public void RecibirValores()
@@ -13,7 +13,7 @@
             ancho = Convert.ToDouble(Console.ReadLine());
         }
 
-        public double ObtenerArea() => alto * ancho;
+        private double ObtenerArea() => alto * ancho;
 
         public void MostrarDetalles()
         {
